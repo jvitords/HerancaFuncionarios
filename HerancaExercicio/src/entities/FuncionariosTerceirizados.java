@@ -26,6 +26,6 @@ public class FuncionariosTerceirizados extends Funcionarios {
 	}
 	
 	public String toString() {
-		return "Nome: " + getNome() + "\nHoras: " + getNome() + "\nValor por hora: R$" + getValor() + "\nPagamento: R$" + pagamento(getHoras(), despesaAdicional);
+		return "Nome: " + getNome() + "\nHoras: " + getHoras() + "\nValor por hora: R$" + getValor() + "\nPagamento: R$" + pagamento(getHoras(), despesaAdicional);
 	}
 }

@@ -22,10 +22,7 @@ public class Program {
 		
 		
 		for(int i = 0; i < numeroDeFuncionarios; i++) {
-			System.out.print("Nome do funcionário:");
-			digitar.nextLine();
-			String nome = digitar.nextLine();
-			System.out.print("É funcionário da empresa('s') ou terceirizado('n')? ");
+			System.out.print("\nÉ funcionário da empresa('s') ou terceirizado('n')? ");
 			char letraDaOpcao = digitar.next().charAt(0);
 			
 			while (letraDaOpcao != 's' && letraDaOpcao != 'n') {
@@ -33,6 +30,9 @@ public class Program {
 				letraDaOpcao = digitar.next().charAt(0);
 			}
 			
+			System.out.print("Nome do funcionário:");
+			digitar.nextLine();
+			String nome = digitar.nextLine();
 			System.out.print("Quantas horas trabalhadas? ");
 			int horasTrabalhadas = digitar.nextInt();
 			System.out.print("Valor por hora? ");
